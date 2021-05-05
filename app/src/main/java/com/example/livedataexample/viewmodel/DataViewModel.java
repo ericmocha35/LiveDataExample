@@ -6,10 +6,9 @@ import androidx.lifecycle.ViewModel;
 
 public class DataViewModel extends ViewModel {
 
-    private MutableLiveData<Integer> mLikeCount;
+    private MutableLiveData<Integer> mLikeCount = new MutableLiveData<>();
 
     public DataViewModel() {
-        mLikeCount = new MutableLiveData<>();
         mLikeCount.setValue(0);
     }
 
